@@ -1,0 +1,60 @@
+---
+title: "L'apport du numérique dans la sécurité des aliments à travers la traçabilité"
+author: "Kevine Gadjeu"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: '3'
+  html_document:
+    code_folding: hide
+    fig_caption: true
+    number_sections: true
+    toc: true
+    toc_float: true
+bibliography: biblio/Informatique.bib
+csl: "biblio/isara-iso-690.csl"
+header-includes:
+  - \usepackage[T1]{fontenc}
+  - \usepackage[utf8]{inputenc}
+  - \usepackage{lmodern}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+library(knitr)
+```
+
+# Problèmatique
+
+comment le numérique améliore t'il la sécurité des aliments à travers la traçabilté
+
+# Définitions
+# Définitions
+
+Selon @valceschini2015tracabilite, la **traçabilité** requiert la capacité à enregistrer et à conserver les informations relatives à un produit. À chaque cession ou transaction, ces données doivent être transférées sous la forme d’un étiquetage approprié, de documents d’accompagnement ou, de plus en plus fréquemment, sous **forme électronique**.
+
+C'est précisément ici que le numérique intervient : pour stocker ces "formes électroniques" de manière sécurisée et pérenne, les entreprises s'appuient sur des infrastructures comme le Cloud ou le NAS.
+
+**Le numérique** correspond à l’ensemble des technologies permettant le traitement et l’échange de données sous forme digitale 
+
+
+
+## Présentation Générale
+
+La traçabilité alimentaire désigne l’ensemble des processus permettant de suivre un produit tout au long de la chaîne agroalimentaire, depuis la production jusqu’à la consommation, afin d’assurer sa qualité et son innocuité. Ce suivi rigoureux est essentiel pour prévenir les risques sanitaires, faciliter les rapports de rappel de produits en cas de contamination et renforcer la confiance des consommateurs vis-à-vis des systèmes alimentaires modernes. La traçabilité est donc devenue un enjeu central pour les entreprises et les autorités publiques qui souhaitent garantir la sécurité alimentaire dans un contexte de chaînes d’approvisionnement de plus en plus globalisées et complexes. En effet, des systèmes de traçabilité numériques permettent de collecter, structurer et analyser des données tout au long de la chaîne d’approvisionnement, ce qui améliore l’efficacité des réponses aux crises sanitaires et la transparence des informations produites pour les consommateurs.
+L’intégration du numérique dans les dispositifs de traçabilité repose sur l’usage de technologies comme les bases de données centralisées, les capteurs connectés, les codes QR, la RFID (Radio-Frequency Identification) ou encore la blockchain. Ces outils favorisent l’enregistrement automatique d'informations, la réduction des erreurs humaines et la transmission rapide des données entre les différents acteurs de la chaîne agroalimentaire. Par exemple, des études montrent que l’adoption de solutions numériques dans les systèmes de traçabilité améliore la transparence de la chaîne d’approvisionnement, la conformité réglementaire et la réactivité face aux incidents alimentaires.
+La digitalisation de la traçabilité ne profite pas uniquement à la sécurité alimentaire, mais aussi à l’optimisation des opérations, à la réduction des coûts et à la promotion de pratiques durables. Néanmoins, elle soulève également des défis, tels que la standardisation des données, l’interopérabilité des systèmes et l’obligation de former les acteurs aux nouvelles technologies. Malgré ces obstacles, les avancées numériques continuent à transformer les pratiques de traçabilité, offrant des perspectives prometteuses pour une gestion plus fiable, transparente et durable des systèmes alimentaires.
+
+
+
+# Conclusion
+
+
+## Liens
+
+ISARA : <https://isaranet.fr/> consulté le ...
+
+## Bibliographie
+
+ 
