@@ -3,6 +3,8 @@ title: "L'apport du numérique dans la sécurité des aliments à travers la tra
 author: "Kevine Gadjeu"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output:
+  pdf_document:
+    toc: true
   html_document:
     toc: true
     toc_float: false

@@ -1,0 +1,122 @@
+---
+title: "L'apport du numérique dans la sécurité des aliments à travers la traçabilité"
+author: "Kevine Gadjeu"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: false
+    number_sections: true
+    code_folding: hide
+    theme: bootstrap
+bibliography: biblio/Informatique.bib
+csl: "biblio/isara-iso-690.csl"
+---
+
+<style>
+/* Style pour encadrer le sommaire au début du texte */
+#TOC {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Pied de page fixe en bas de l'écran */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+    border-top: 1px solid #dee2e6;
+    z-index: 100;
+}
+
+body {
+    margin-bottom: 60px; /* Espace pour ne pas cacher le texte derrière le pied de page */
+}
+</style>
+
+<div class="footer">
+  Kevine Gadjeu - Rapport de stage - 2026
+</div>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+library(knitr)
+```
+
+# INTRODUCTION {-}
+
+La sécurité alimentaire, en matière de qualité, est devenue un sujet d’actualité au cours de ces dernières années. Les graves crises alimentaires, comme celle de la « vache folle » et celle causée par la forte croissance de la production des organismes génétiquement modifiés (OGM), inquiètent de plus en plus les populations. Dès lors, plusieurs pays dans le monde ont dû instaurer des mesures nationales pour assurer l’innocuité des biens de consommation tout en respectant les règles du commerce international. (Bonnin et al, 2004). Dans ce contexte la traçabilité des aliments apparait comme un levier important pour assurer la qualité, la sécurité et la confiance des consommateurs. 
+Avec l’avenue du numérique, de nouveaux outils technologiques sont venus renforcer les systèmes de control des aliments à travers la traçabilité. Les systèmes d’information, les technologies d’identification automatique, l’internet des objets (loT) ou encore la blockchain transforment profondément la manière dont les données alimentaires sont collectées, stockées et partagées. Ce rapport analyse donc l’apport du numérique dans la sécurité des aliments à travers la traçabilité, en mettant en lumière ses bénéfices, mais aussi ses limites.
+
+# la traçabilité : un enjeux de l'groalimentaire
+ 
+## Définition et objectifs de la traçabilité
+
+La traçabilité requiert la capacité à enregistrer et à conserver les informations relatives à un produit et, à chaque cession ou transaction, de les transférer sous la forme d’un étiquetage approprié, de documents d’accompagnement ou sous forme électronique (Valceschini et al, 2015). Selon la norme ISO 22005, elle consiste à tracer l’historique, l’utilisation ou la location d’un produit à l’aide d’identifications enregistrées. 
+Les principaux principes de la traçabilité sont de donner les informations aux consommateurs sur les produits alimentaires, assurer la sécurité des consommateurs grâce à la gestion de la chaine alimentaire et faciliter le retrait et les rappels de produits présentant des anomalies.
+
+## Les risques en cas de mauvaise traçabilité
+
+Une traçabilité défaillante peut entrainer de grave conséquences :
+
+* **Les risques sanitaires** : ce sont les risques les plus immédiat car met en danger la santé des consommateurs. Une mauvaise traçabilité ne permettra pas d’identifier l’origine d’un aliment contaminé (bactéries, allergènes, toxines). C’est d’ailleurs la raison pour laquelle l’article 18 du Règlement (CE) n° 178/2002 du Parlement européen et du Conseil du 28 janvier 2002 impose l’importance d’assurer à un niveau élevé la sécurité des consommateurs. 
+
+* **Les risques juridiques** : L’étiquetage trompeur ou incomplet des denrées alimentaires est sanctionné par l’article L. 412-1 du Code de la consommation. L’omission d’informations obligatoires ou la présence de mentions interdites sont punies de 2 ans d’emprisonnement et 300 000 € d’amende. Les allégations nutritionnelles ou de santé mensongères font l’objet de poursuites similaires. De l’autre côté, le défaut de traçabilité des produits alimentaires est réprimé par l’article L. 237-2 du Code rural, ’absence de tenue des registres obligatoires ou l’impossibilité d’identifier l’origine des denrées peuvent entraîner jusqu’à 2 ans de prison et 15 000 € d’amende. La non-déclaration d’un danger lié à un produit est punie de 5 ans d’emprisonnement et 375 000 € d’amende. 
+
+* **Les risques sociaux et commerciales** : une mauvaise traçabilité peut entrainer une perte de confiance des consommateurs. En effet les consommateurs modernes cherchent à savoir d’où viennent les produits qu’ils consomment. 
+Les marques qui n’offrent pas la transparence sur leurs produits (mauvaise information sur les produits) peuvent perdre leur crédibilité vis-à-vis des clients et par conséquent une baisse des ventes. 
+
+## Cadre réglementaire et normes en matière de traçabilité
+
+La traçabilité est un des outils indispensables dans tout processus de qualité des produits susceptibles d’affecter la santé humaine notamment l’alimentation. Il est l’un des sujets d’actualité recouvrant différents concepts notamment la sécurité, la transparence de l’origine des produits, la loyauté des transactions commerciales et la qualité en général. 
+
+Selon Louisa, et al 2024, plusieurs textes normatifs et réglementaires font référence à la traçabilité : le Codex alimentarius, l’ISO 22000 : 2005, ISO 22005 : 2007 et l’article 18 du Règlement (CE) n° 178/2002 du Parlement européen et du Conseil du 28 janvier 2002.
+
+# Les outils numériques au profit de la traçabilité
+
+## Systèmes d’information et bases de données centralisées
+
+Les systèmes d’information jouent un rôle central dans la gestion de la traçabilité alimentaire. Ils permettent de collecter, stocker et analyser de grandes quantités de données relatives aux matières premières, aux processus de transformation et à la distribution des produits. Les bases de données centralisées facilitent le partage d’informations entre les différents acteurs de la chaine agroalimentaire et améliorent la réactivité en cas d’incident sanitaire.
+
+## Technologie d’identification et de suivi des produits
+
+### Code- barres, QR codes et RFID
+
+ Le code à barres est un système de codage de l’information représenté par une succession de barres et d’espaces de différentes largeurs dont la juxtaposition représente des données numériques et alphanumériques.  Ce système est un outil de fiabilisation des données : il élimine les erreurs dues aux saisies manuelles, notamment lors de changement d’atelier. Il est un outil de gestion de l’entreprise (production, stocks, commandes) et d’utilisation simple et rapide.
+Les QR codes, également appelés codes à réponse rapide, sont largement utilisés dans la gestion de la chaîne d’approvisionnement. Ils permettent de stocker des informations exhaustives sur les produits, comme leur origine et la liste des ingrédients, tout en étant facilement scandales via un téléphone portable.
+La technologie RFID (Identification par radio fréquence) utilise des champs électromagnétiques pour identifier et suivre automatiquement les étiquettes attachées aux objets, permettant un suivi en temps réel des produits individuels ou des palettes tout au long de la chaîne d’approvisionnement. Les étiquettes RFID facilitent également la surveillance de la température et des conditions de stockage. Cette technologie est appréciée pour sa simplicité d’utilisation et son faible entretien, assurant la lecture simultanée de centaines d’articles par un seul scanner.
+
+### Internet des objets (loT)
+
+L’Internet des objets IoT est un réseau d’appareils interconnectés échangeant des informations, ce qui permet une traçabilité complète de la chaîne d’approvisionnement. Grâce à des technologies telles que les capteurs, le cloud computing et le big data, l’IoT offre un vaste potentiel, allant de la surveillance des conditions environnementales pendant l’approvisionnement au suivi de la consommation. 
+
+## La blockchain
+
+Autrefois réservée uniquement aux crypto-monnaies et à la finance, la blockchain est désormais un outil indispensable pour assurer la traçabilité au sein de la chaîne d’approvisionnement. Fonctionnant comme un registre permanent et sécurisé des transactions, la blockchain enregistre toutes les activités liées à un produit dans des blocs interconnectés. Chaque bloc contient des horodatages et des informations sur les parties impliquées, permettant ainsi une traçabilité complète du cycle de vie du produit. Les données enregistrées sont inviolables, renforçant la confiance et la transparence tout au long de la chaîne de valeur.
+
+# Impact du numérique sur la sécurité des aliments
+
+## Avantage pour la sécurité alimentaire
+
+Meilleure détection et prévention des risques en temps réel : les technologies numériques (loT, systèmes de surveillance automatisés) permettent de collecter des données en temps réel sur les conditions de production, de stockage et de transport (température, humidité, localisation, etc.). Cela améliore la détection précoce des conditions dangereuse et permet une intervention rapide avant qu’un risque ne devienne un problème sanitaire.
+Amélioration de la traçabilité et des rappels ciblés : la numérisation permet un suivi précis « du champ à l’assiette », ce qui facilite l’identification rapide de la source d’une contamination ou d’un défaut sanitaire. Grace à ces systèmes, lorsqu’un problème survient, il est possible de localiser exactement les lots concernés et de lancer des rappels ciblés, minimisant ainsi l’impact sanitaire et économique.
+
+## 	Limites et défis 
+
+Malgré ses nombreux avantages, la traçabilité numérique présente certaines limites. Les couts d’implantation, la complexité technologique, la protection des données et l’interopérabilité entre les systèmes constituent les défis majeurs, en particulier pour les petites et moyennes entreprises. De plus, la fiabilité des systèmes numériques dépend fortement de la qualité des données saisies.
+
+# Conclusion {-}
+
+Le numérique joue un rôle déterminant dans le renforcement de la traçabilité alimentaire et, par conséquent, de la sécurité des aliments. Les outils numériques offrent des solutions performantes pour suivre les produits, prévenir les risques sanitaires et lutter contre les fraudes. Toutefois, leur efficacité repose sur une mise en œuvre maitrisée, une formation adéquate des acteurs et un cadre réglementaire adapté. À l’avenir, l’intégration progressive de technologie innovantes comme la blockchain et le loT, devrait contribuer à transformer les systèmes de traçabilité et renforcer la sécurité alimentaire à l’échelle mondiale.
+
+
+Bibliographie
